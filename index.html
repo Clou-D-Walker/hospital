@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-0 mt-0">
+      <nav
+        id="navbar"
+        class="flex justify-around items-center bg-white shadow-md w-[100vw]"
+      >
+        <a href="#">
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            class="h-[69px] w-[375px] pt-[13px] pl-[155px] pr-[1rem] pb-1.5"
+          />
+        </a>
+        <button id="toggleButton" class="md:hidden">☰</button>
+        <div
+          class="hidden sm:flex flex-row space-x-10 text-center py-2"
+          style="z-index: 200"
+        >
+          <!-- Navbar links for small and medium devices -->
+          <a
+            href="#"
+            class="hover:bg-custom-blue hover:text-white p-2 rounded-full"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:bg-custom-blue hover:text-white p-2 rounded-full"
+            >Facilities</a
+          >
+          <a
+            href="#"
+            class="hover:bg-custom-blue hover:text-white p-2 rounded-full"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="hover:bg-custom-blue hover:text-white p-2 rounded-full"
+            >Careers</a
+          >
+        </div>
+        <div class="sm:hidden">
+          <!-- Additional buttons or links for small devices -->
+          <a href="#" class="block mb-2 text-blue-500">Home</a>
+          <a href="#" class="block mb-2 text-blue-500">Facilities</a>
+          <a href="#" class="block mb-2 text-blue-500">Blog</a>
+          <a href="#" class="block mb-2 text-blue-500">Careers</a>
+        </div>
+        <div class="md:flex items-center space-x-8">
+          <!-- Social icons and other elements for medium and larger devices -->
+          <a href="#"><i class="fa-solid fa-magnifying-glass pr-7"></i></a>
+          <a href="#"><i class="fab fa-facebook-f w-auto"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Search icon -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="relative h-2/3 mx-auto" id="main_slide">
+      <div class="absolute inset-0 bg-main bg-overlay h-full"></div>
+
+      <!-- New div for the image -->
+      <div class="image-container-1">
+        <img src="/assets/246.png" alt="Description" class="image1 mb-3" />
+        <span class="pl-[1rem] font-normal text-7xl text-white mb-[20px]"
+          >We Care</span
+        >
+        <span class="pl-[1rem] font-normal text-7xl text-green-400"
+          >We Heal</span
+        >
+        <span class="pl-[1rem] font-normal text-7xl text-white">We Lead</span>
+      </div>
+    </div>
+
+    <!-- doctor image  -->
+    <div class="image-container-2"></div>
+
+    <!-- cards sections -->
+    <div
+      class="flex flex-wrap space-x-8 p-4"
+      id="cards"
+      style="font-family: Rubik"
+    >
+      <div
+        class="card bg-white shadow-md rounded-lg p-4 m-2 w-[255px] h-[500px] ml-[9rem] cards_all"
+      >
+        <img src="/assets/246.png" alt="Description" class="w-[115px] mb-9" />
+        <span class="text-xl font-semibold mb-2"> 24 /7 </span> <br />
+        <span class="text-xl font-semibold mb-2"> Infrastructure </span>
+        <span class="text-xl font-semibold mb-2"> services </span>
+        <p class="text-gray-700 mt-[2rem]">
+          88257 27230, 044 22112211 (30 lines) for Ambulance Extension No – 9
+        </p>
+      </div>
+
+      <!-- card 2 -->
+      <div
+        class="inset-0 shadow-md rounded-lg p-4 m-2 w-[255px] h-[500px] cards_all card_2 overlay_c2"
+      >
+        <img
+          src="/assets/card 2.png"
+          alt="Description"
+          class="w-[115px] mb-9"
+        />
+        <h2 class="text-xl font-semibold mb-2 text-white">Cardiology</h2>
+        <p class="text-gray-100 mb-[7rem]">
+          Evidence-based treatment for multiple cardiac problems with
+          cutting-edge technology by our highly knowledgeable cardiac
+          consultants.
+        </p>
+        <a href="#" style="margin-left: 1rem">
+          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff"></i>
+        </a>
+      </div>
+
+      <!-- card3 -->
+      <div
+        class="inset-0 shadow-md rounded-lg p-4 m-2 w-[255px] h-[500px] cards_all card_3 overlay_c3"
+      >
+        <img
+          src="/assets/card3.png"
+          alt="Description"
+          class="w-[115px] mb-[0.2rem]"
+        />
+        <h2 class="text-xl font-semibold mb-2 text-white mt-7">
+          Interventional radiology
+        </h2>
+        <p class="text-gray-100 mb-[7rem]">
+          Equipped with artificial intelligence for image- guided diagnosis and
+          treatment of various diseases with less risky and faster recovery.
+        </p>
+        <a href="#" style="margin-left: 1rem">
+          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff"></i>
+        </a>
+      </div>
+
+      <!-- card 4 -->
+      <div
+        class="inset-0 shadow-md rounded-lg p-4 m-2 w-[255px] h-[500px] cards_all card_4 overlay_c4"
+      >
+        <img
+          src="/assets/card4.png"
+          alt="Description"
+          class="w-[115px] mb-[0.2rem]"
+        />
+        <h2 class="text-xl font-semibold mb-2 text-white mt-7">
+          New born & pediatric care
+        </h2>
+        <p class="text-gray-100 mb-[7rem]">
+          Provides a wide range of services from routine check-ups to
+          immunizations and cater to the unique needs of infants, children and
+          adolescents.
+        </p>
+        <a href="#" style="margin-left: 1rem">
+          <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center text-5xl mt-20 element">SRI CARES</div>
+    <!-- <div class="rectangle-with-curved-border"></div> -->
+
+    <div class="text-center text-5xl mt-20 font-extralight">ABOUT US</div>
+
+    <p class="text-center px-[5rem] py-4">
+      Sri Hospitals is a multi-specialty hospital in Tondiarpet, Chennai that
+      offers high-quality treatment through state-of-the-art technology and
+      skilled consultants. With quality infrastructure and the latest medical
+      technology our goal is to make every patient who comes to us believe in
+      our motto <span class="font-bold">We care, We Heal, We Lead. </span> From
+      orthopedics to pediatric care, Sri Hospitals offers a wide range of
+      treatments to patients of all age groups. This medical institution is also
+      a 24/7 accident and emergency hospital in Tondiarpet, Chennai. Trust us to
+      treat you with compassion, empathy, and care.
+    </p>
+
+    <div class="con1 w-[855px] h-[150px] text-left">
+      <div class="text-left font-semibold text-xl ml-[6rem] mt-[7rem]">
+        Our Mission
+      </div>
+      <p class="pl-[6rem] pt-[1.5rem]">
+        To be a dynamic center for medical excellence that always serves
+        patients with commitment, care and compassion. To surpass patient
+        expectations through exceptional service and deliver impressive clinical
+        out comes.To be a world-class trauma care centre that believes in
+        putting the patient’s well-being at the forefront.
+      </p>
+    </div>
+    <div class="con1 w-[855px] h-[150px] text-left">
+      <div class="text-left font-semibold text-xl ml-[6rem] mt-[3rem]">
+        OUR VISION
+      </div>
+      <p class="pl-[6rem] pt-[1.5rem]">
+        To be an ethical, efficient and empathetic institution that impacts our
+        patient’s lives positively. To bring in innovative and successful
+        treatments that could deliver the best outcome for our patients.To be a
+        true leader that has the welfare of the community we serve, at its
+        heart.
+      </p>
+    </div>
+    <div class="con1 w-[855px] h-[150px] text-left mb-12">
+      <div class="text-left font-semibold text-xl ml-[6rem] mt-[3rem]">
+        QUALITY POLICY
+      </div>
+      <p class="pl-[6rem] pt-[1.5rem]">
+        We constantly seek to enhance the knowledge of our medical and nursing
+        personnel. We actively encourage them to update themselves about
+        innovative medical practices and also incorporate the most cutting-edge
+        technology available.
+      </p>
+    </div>
+    <span>
+      <div
+        class="text-right font-semibold text-3xl mt-[-33rem] mr-[17rem]"
+        id="con_right"
+      >
+        FACILITIES
+      </div>
+      <img
+        src="./assets/fac.jpg"
+        alt="facilities"
+        class="w-[337px] h-[202px] ml-[60rem] mt-4 mb-12"
+      />
+      <span class="ml-[60rem] p-4 mb-4"> Our Facilities </span>
+      <!-- <br /> -->
+      <a href="#" class="ml-[62rem] mt-10">
+        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+      </a>
+    </span>
+
+    <!-- departments -->
+    <div
+      class="absolute inset-0 departments dep_overlay w-full h-[900px] mt-[10rem]"
+      style="position: relative"
+    >
+      <p
+        class="text-6xl text-white pl-[32rem] mt-[7rem] element2"
+        style="position: absolute"
+      >
+        DEPARTMENTS
+      </p>
+      <div class="olympic-hexagons">
+        <div class="hexagon-container">
+          <div class="hexagon">
+            <div class="flex-col">
+              <img
+                src="./assets/h1.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >TRAUMA CARE</span
+              >
+            </div>
+          </div>
+          <div class="hexagon">
+            <div class="flex-col">
+              <img
+                src="./assets/h2.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="
+                  margin-top: -11rem;
+                  margin-bottom: 0.5rem;
+                  margin-left: 3rem;
+                "
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >Pediatric& newborn</span
+              >
+            </div>
+          </div>
+          <div class="hexagon">
+            <div class="flex-col">
+              <img
+                src="./assets/h3.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >Cardiology</span
+              >
+            </div>
+          </div>
+          <div class="hexagon">
+            <div class="flex-col">
+              <img
+                src="./assets/h4.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >Hand Surgery</span
+              >
+            </div>
+          </div>
+          <div class="hexagon" style="margin-left: 7rem">
+            <div class="flex-col">
+              <img
+                src="./assets/h5.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >Dermatology</span
+              >
+            </div>
+          </div>
+          <div class="hexagon">
+            he
+            <div class="flex-col">
+              <img
+                src="./assets/h6.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span style="margin-top: 2rem" class="font-semibold font-poppins"
+                >DIABETOLOGY</span
+              >
+            </div>
+            x6
+          </div>
+          <div class="hexagon" style="margin-right: 7rem">
+            <div class="flex-col">
+              <img
+                src="./assets/h7.png"
+                alt=""
+                width="70px"
+                height="70px"
+                style="margin-top: -11rem; margin-bottom: 0.5rem"
+              />
+              <span
+                style="margin-top: 2rem; margin-left: 1.2rem"
+                class="font-semibold font-poppins"
+                >ENT</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("toggleButton")
+        .addEventListener("click", function () {
+          const navbarLinks = document.querySelector(".hidden.sm:flex");
+          navbarLinks.classList.toggle("hidden");
+          navbarLinks.classList.toggle("flex");
+        });
+    </script>
+  </body>
+</html>
